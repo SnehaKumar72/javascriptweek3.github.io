@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edbdfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin: 0;
+}
+.container {
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+}
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.task-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.task-form input[type="text"],
+.task-form input[type="date"],
+.task-form select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #f4c7ff;
+    border-radius: 4px;
+}
+
+.task-form button {
+    padding: 10px 20px;
+    background-color: #b80cec;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.task-list {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    background-color: #e2b7f7;
+    transition: background-color 0.2s ease-in-out;
+}
+.task.completed {
+    background-color: #d4edda;
+}
+.deleteTaskBtn {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.deleteTaskBtn:hover {
+    background-color: #c82333;
+}
+@media (max-width: 600px) {
+    .task-form input[type="text"],
+    .task-form input[type="date"],
+    .task-form select,
+    .task-form button {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
